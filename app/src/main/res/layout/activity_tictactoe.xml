@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.tictactoe.TicTacToe">
+
+        <LinearLayout
+            android:id="@+id/turnText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                style="@style/turnLabel"
+                android:text="It is " />
+
+            <TextView
+                android:id="@+id/turnLabel"
+                style="@style/turnLabel"
+                android:text="X" />
+
+            <TextView
+                style="@style/turnLabel"
+                android:text="'s turn" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/turnText">
+
+            <!-- Create Grid Lines-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <View style="@style/gridSpacing" />
+
+                <View style="@style/verticalLine" />
+
+                <View style="@style/gridSpacing" />
+
+                <View style="@style/verticalLine" />
+
+                <View style="@style/gridSpacing" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View style="@style/gridSpacing" />
+
+                <View style="@style/horizontalLine" />
+
+                <View style="@style/gridSpacing" />
+
+                <View style="@style/horizontalLine" />
+
+                <View style="@style/gridSpacing" />
+
+            </LinearLayout>
+
+            <!-- Create Grid Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/firstRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/grid1"
+                        style="@style/gridButtons"/>
+
+                    <Button
+                        android:id="@+id/grid2"
+                        style="@style/gridButtons" />
+
+                    <Button
+                        android:id="@+id/grid3"
+                        style="@style/gridButtons" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/grid4"
+                        style="@style/gridButtons" />
+
+                    <Button
+                        android:id="@+id/grid5"
+                        style="@style/gridButtons" />
+
+                    <Button
+                        android:id="@+id/grid6"
+                        style="@style/gridButtons" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/grid7"
+                        style="@style/gridButtons" />
+
+                    <Button
+                        android:id="@+id/grid8"
+                        style="@style/gridButtons" />
+
+                    <Button
+                        android:id="@+id/grid9"
+                        style="@style/gridButtons" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
+

@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@android:color/primary_text_light</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+    </style>
+
+    <style name="turnLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/turn_label_size</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingBottom">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="gridSpacing">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="horizontalLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_thickness</item>
+        <item name="android:background">@color/gridLines</item>
+    </style>
+
+    <style name="verticalLine">
+        <item name="android:layout_width">@dimen/line_thickness</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/gridLines</item>
+    </style>
+
+    <style name="gridButtons" parent="android:Widget.Material.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:onClick">onClick</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+    </style>
+</resources>
